@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+ <%= stylesheet_link_tag  'assets/stylesheets/style.css' %>
+</head>
+
+<body>
+<div id="wraper">
+<div id="main">
+<div id="header">
+
+<div id="navigation"> 
+  <%= image_tag 'nav.jpg'  %>
+</div>
+ <%= form_for @user, :url => { :action => "create" } do |f| %>
+<table>
+<tr>
+<td>
+ Immediate call back (preferred/OK)
+</td>
+<td>
+<input checked="checked" id="prefered" name="prefered" type="checkbox" />
+</td>
+</tr>
+
+
+
+<tr>
+<td>
+ phone number
+</td>
+<td>
+<%= f.text_field :phone %>
+</td>
+</tr>
+
+
+<tr>
+<td>
+ Message
+</td>
+<td>
+<%= f.text_area :message, :size => "30x5" %>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>
+Contacted by (SMS rather than a phone call)
+</td>
+<td>
+ 
+<input checked="checked" id="contacted" name="contacted" type="checkbox" />
+</td>
+</tr>
+
+
+<tr>
+<td>
+ smoker / non-smoker
+</td>
+<td>
+ 
+<input checked="checked" id="smoker" name="smoker" type="checkbox" />
+</td>
+</tr>
+
+
+
+<tr>
+<td>
+How would you prefer me to dress?
+</td>
+<td>
+ 
+<select name="post[category]">
+  <option></option>
+  <option>smart casual (jeans and a shirt) with good shoes</option>
+  <option>In a suit</option>
+</select>
+</td>
+</tr>
+
+
+
+
+
+
+
+</table>
+
+  <%= f.submit "Submit"%>
+
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="main_content">
+
+
+
+ 
+
+
+</div>
+
+<!--content block end-->
+
+<div class="clear">&nbsp;</div>
+
+</div>
+
+<!--footer block start-->
+<div id="footer">
+ 
+ <%= image_tag 'footer.jpg'  %>
+
+</div>
+<!--footer block end-->
+
+
+</div>
+
+</body>
+</html>
