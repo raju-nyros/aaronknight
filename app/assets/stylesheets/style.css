@@ -1,0 +1,78 @@
+/* CSS Document */
+
+body{
+margin:0px auto;
+padding:0px;
+background:url(bg.jpg) no-repeat center;
+}
+#wraper{
+background:url(footer_bg.jpg) bottom repeat-x;
+width:100%;
+overflow:hidden;
+}
+#main{
+width:935px;
+margin:0px auto;
+}
+#header{
+width:935px;
+height:425px;
+}
+#navigation{
+width:935px;
+height:99px;
+}
+#banner{
+width:931px;
+height:316px;
+margin:10px auto;
+}
+.main_content{
+width:935px;
+height:auto;
+margin:10px auto;
+}
+.left_content{
+width:479px;
+float:left;
+}
+.left_content p{
+margin:0px;
+padding:0px;
+font:14px/20px Arial, Helvetica, sans-serif;
+text-align:justify;
+color:#000;
+width:460px;
+float:left;
+}
+.left_content p span.big_font{
+font:33px Arial, Helvetica, sans-serif;
+}
+.right_imgblock{
+width:453px;
+height:326px;
+float:left;
+}
+.enter{
+width:auto;
+height:auto;
+float:left;
+margin:60px 20px 0px 20px;
+}
+.enter a{
+font:12px Arial, Helvetica, sans-serif;
+color:#fff;
+padding:10px 20px 10px 20px;
+text-decoration:none;
+background:#262525;
+}
+.enter a:hover{
+background:#8ed52a
+}
+.clear{
+clear:both;
+}
+#footer{
+width:932px;
+margin:0px auto;
+}
